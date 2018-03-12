@@ -13,6 +13,8 @@ Router.map(function() {
   this.route("show", {
     path: ":project/:version"
   });
+  this.route("404", { path: "/*path" });
+  // this.route('404'); // this works diretly to /404 route, but not what we want
 });
 
 export default Router;
